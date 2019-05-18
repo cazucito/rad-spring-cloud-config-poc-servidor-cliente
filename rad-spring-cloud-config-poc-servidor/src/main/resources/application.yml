@@ -1,0 +1,12 @@
+  
+##spring.cloud.config.server.git.uri=${HOME}/Desktop/config
+#spring.cloud.config.server.git.uri=C:/_dev/_code/springcloud/pocs-scc
+spring:
+  application:
+    name: servicio-de-configuracion
+  cloud:    config:      server:        git:          uri: https://github.com/cazucito/rad-spring-cloud-config-poc.git  
+          #uri: ${HOME}/config
+          #uri: C:/_dev/_config/aplicacion
+#
+server:
+  port: 6001
